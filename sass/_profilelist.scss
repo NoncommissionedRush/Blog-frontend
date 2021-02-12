@@ -1,0 +1,21 @@
+// profiles list
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 1rem;
+  line-height: 1.5;
+  position: relative;
+
+  .btn {
+    margin-top: 0.5rem;
+  }
+}
+
+.img-clublogo {
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}

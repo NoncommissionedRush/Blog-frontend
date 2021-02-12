@@ -1,0 +1,72 @@
+// general
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  font-family: "Alegreya", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $primary_color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.img-thumb {
+  border: 10px solid #fff;
+}
+
+.small {
+  width: 250px;
+}
+
+.profile-img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 5rem 3rem;
+  overflow: hidden;
+}

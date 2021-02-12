@@ -1,0 +1,23 @@
+// register & login form
+
+.register-content,
+.login-content {
+  width: 60%;
+}
+
+.form {
+  input {
+    display: block;
+    padding: 0.7rem 2rem;
+    margin: 1rem 0;
+    width: 100%;
+
+    .alert {
+      width: 60%;
+    }
+  }
+}
+
+.fas {
+  margin-right: 1rem;
+}
