@@ -16,6 +16,13 @@
       width: 60%;
     }
   }
+
+  textarea {
+    padding: 0.5rem;
+    width: 100%;
+    resize: none;
+    font-family: "Alegreya", sans-serif;
+  }
 }
 
 .fas {

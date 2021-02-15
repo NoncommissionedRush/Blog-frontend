@@ -28,6 +28,10 @@ body {
 a {
   text-decoration: none;
   color: $primary_color;
+
+  &:hover {
+    color: $secondary_color;
+  }
 }
 
 ul {
@@ -38,11 +42,27 @@ img {
   width: 100%;
 }
 
+.fas {
+  margin-right: 0 !important;
+}
+
 .img-thumb {
   border: 10px solid #fff;
 }
 
+.centered {
+  margin: 1rem auto;
+}
+
+.tiny {
+  width: 50px;
+}
+
 .small {
+  width: 180px;
+}
+
+.medium {
   width: 250px;
 }
 
@@ -65,8 +85,39 @@ img {
 }
 
 .container {
-  max-width: $max-width;
   margin: 0 auto;
-  padding: 5rem 3rem;
-  overflow: hidden;
+  max-width: $max-width;
+  padding: 5rem 0;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 2rem;
+}
+
+.sticky {
+  align-self: start;
+  position: sticky;
+  top: 70px;
+}
+
+.highlightable {
+  position: relative;
+
+  &:after {
+    content: "\A";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
 }

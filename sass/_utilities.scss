@@ -27,7 +27,7 @@
 
 //text
 .text-xl {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .text-l {
@@ -35,11 +35,15 @@
 }
 
 .text-lead {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .text-primary {
   color: $primary_color;
+}
+
+.text-grey {
+  color: #666;
 }
 
 .text-secondary {
@@ -48,6 +52,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 // buttons
@@ -63,6 +71,11 @@
   border-radius: 2%;
   font-size: 1rem;
 
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+
   &:first-child {
     margin-right: 1rem;
   }
@@ -70,7 +83,8 @@
   &-primary {
     @include set-background($primary_color);
     &:hover {
-      background: lighten($primary_color, 7%);
+      background: lighten($primary_color, 10%);
+      color: #fff !important;
     }
   }
   &-secondary {
@@ -87,7 +101,7 @@
   }
 
   &-light:hover {
-    background: darken($light_color, 5%);
+    background: lighten(#000, 80%);
     color: #666;
   }
 
@@ -104,12 +118,27 @@
     }
   }
 
-  &-lg {
-    padding: 0.8rem 2rem;
+  &-white {
+    appearance: none;
+    @include set-background(#fff);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &:hover {
+      background: $light_color;
+    }
   }
 
-  &:hover {
-    cursor: pointer;
+  &-sm {
+    padding: 0.5rem 0.8rem;
+  }
+
+  &-md {
+    padding: 0.8rem;
+  }
+
+  &-lg {
+    padding: 0.8rem 2rem;
   }
 }
 

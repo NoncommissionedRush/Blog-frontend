@@ -9,88 +9,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="client/public/css/style.min.css" />
+    <title>Sass playground</title>
     <script
       defer
       src="https://kit.fontawesome.com/a31f9b8048.js"
       crossorigin="anonymous"
     ></script>
-    <title>Sass playground</title>
   </head>
   <body>
     <nav class="navbar bg-primary">
-      <a id="logo" href="index.html"
-        ><img src="../../../img/nfl-logo2.png" alt="nfl-logo"
-      /></a>
+      <a id="logo" href="index.html">Logo</a>
       <ul class="nav">
         <li><a href="fans.html">Fans</a></li>
         <li><a href="#">Teams</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-
     <div class="container">
+      <h1 class="text-xl text-primary">Blog</h1>
       <div class="container-grid">
-        <!-- top -->
-        <div class="profile-wrapper">
-          <div class="profile-top py-1">
-            <div class="medium">
-              <div class="profile-img">
-                <img
-                  class="img-round"
-                  src="../../../img/profile-pic.jpg"
-                  alt="profilepicture"
-                />
-              </div>
-            </div>
-            <h1 class="text-l">Paľo Buchta</h1>
-            <p class="text-lead">San Francisco 49ers</p>
-            <p>Bratislava</p>
-            <div class="social-icons my-1">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram fa-2x"></i>
-              </a>
-            </div>
-          </div>
-          <div class="profile-about my-1">
-            <h2 class="text-primary text-l">Bio</h2>
-            <p class="text-lead">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-              voluptate accusamus obcaecati facere minima tempore nobis id
-              dolores deserunt! Possimus veritatis fugit soluta perferendis
-              adipisci nobis molestiae quis harum alias.
-            </p>
-          </div>
-          <h2 class="text-primary text-l my-1">Posts</h2>
-          <hr />
-          <!-- <div class="line"></div> -->
+        <div class="main-content">
           <div class="post my-2 py-1">
-            <a href="post.html" class="post-thumb highlightable"
-              ><img src="../../../img/meme.jpg" alt="img"
-            /></a>
-            <div class="post-details">
-              <small
-                ><i class="fas fa-user"></i>
-                <a href="#">Viktor Milosavljevic</a>
-                <i class="far fa-clock"></i> 2 hours ago</small
-              >
-              <h2>
-                <a href="post.html">The curious case of Trevor Bauer</a>
-              </h2>
-              <p>
-                Trevor Bauer has landed in LA. @ryanriff36 examines the curious
-                case of Trevor Bauer and who Dodger fans are getting.
-              </p>
-              <a class="btn btn-primary" href="post.html">Read more</a>
-            </div>
-          </div>
-          <div class="post my-2 py-1">
-            <a href="post.html" class="post-thumb highlightable"
+            <a href="#" class="post-thumb highlightable"
               ><img src="../../../img/meme.jpg" alt="img"
             /></a>
             <div class="post-details">
@@ -106,11 +46,11 @@
                 Trevor Bauer has landed in LA. @ryanriff36 examines the curious
                 case of Trevor Bauer and who Dodger fans are getting.
               </p>
-              <a class="btn btn-primary" href="post.html">Read more</a>
+              <a class="btn btn-primary" href="#">Read more</a>
             </div>
           </div>
           <div class="post my-2 py-1">
-            <a href="post.html" class="post-thumb highlightable"
+            <a href="#" class="post-thumb highlightable"
               ><img src="../../../img/meme.jpg" alt="img"
             /></a>
             <div class="post-details">
@@ -120,65 +60,119 @@
                 <i class="far fa-clock"></i> 2 hours ago</small
               >
               <h2>
-                <a href="post.html">The curious case of Trevor Bauer</a>
+                <a href="#">Mariners of the future continue to take shape</a>
               </h2>
               <p>
-                Trevor Bauer has landed in LA. @ryanriff36 examines the curious
-                case of Trevor Bauer and who Dodger fans are getting.
+                The Mariners don't add for 2021, but they do add, which is more
+                than I was expecting from today.
               </p>
-              <a class="btn btn-primary" href="post.html">Read more</a>
+              <a class="btn btn-primary" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="post my-2 py-1">
+            <a href="#" class="post-thumb highlightable"
+              ><img src="../../../img/meme.jpg" alt="img"
+            /></a>
+            <div class="post-details">
+              <small
+                ><i class="fas fa-user"></i>
+                <a href="profile.html">Viktor Milosavljevic</a>
+                <i class="far fa-clock"></i> 2 hours ago</small
+              >
+              <h2>
+                <a href="#">Mariners of the future continue to take shape</a>
+              </h2>
+              <p>
+                The Mariners don't add for 2021, but they do add, which is more
+                than I was expecting from today.
+              </p>
+              <a class="btn btn-primary" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="post my-2 py-1">
+            <a href="#" class="post-thumb highlightable"
+              ><img src="../../../img/meme.jpg" alt="img"
+            /></a>
+            <div class="post-details">
+              <small
+                ><i class="fas fa-user"></i>
+                <a href="profile.html">Viktor Milosavljevic</a>
+                <i class="far fa-clock"></i> 2 hours ago</small
+              >
+              <h2>
+                <a href="#">Mariners of the future continue to take shape</a>
+              </h2>
+              <p>
+                The Mariners don't add for 2021, but they do add, which is more
+                than I was expecting from today.
+              </p>
+              <a class="btn btn-primary" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="post my-2 py-1">
+            <a href="#" class="post-thumb highlightable"
+              ><img src="../../../img/meme.jpg" alt="img"
+            /></a>
+            <div class="post-details">
+              <small
+                ><i class="fas fa-user"></i>
+                <a href="profile.html">Viktor Milosavljevic</a>
+                <i class="far fa-clock"></i> 2 hours ago</small
+              >
+              <h2>
+                <a href="#">Mariners of the future continue to take shape</a>
+              </h2>
+              <p>
+                The Mariners don't add for 2021, but they do add, which is more
+                than I was expecting from today.
+              </p>
+              <a class="btn btn-primary" href="#">Read more</a>
             </div>
           </div>
         </div>
-        <div class="side-container">
+        <div class="side-container sticky">
           <h2>Popular Articles</h2>
           <hr />
           <div class="side-post my-1">
-            <a href="post.html" class="side-post-thumb highlightable"
+            <a href="#" class="side-post-thumb highlightable"
               ><img src="../../../img/meme.jpg" alt="img"
             /></a>
             <div class="side-post-details">
               <h2>
-                <a href="post.html">Curious case of Trevor Bauer</a>
+                <a href="#">Curious case of Trevor Bauer</a>
               </h2>
               <small><i class="far fa-clock"></i> 2 hours ago</small>
             </div>
           </div>
           <div class="side-post my-1">
-            <a href="post.html" class="side-post-thumb highlightable"
+            <a href="#" class="side-post-thumb highlightable"
               ><img src="../../../img/meme.jpg" alt="img"
             /></a>
             <div class="side-post-details">
               <h2>
-                <a href="post.html"
-                  >Mariners of the future continue to take shape</a
-                >
+                <a href="#">Mariners of the future continue to take shape</a>
               </h2>
               <small><i class="far fa-clock"></i> September 19, 2020</small>
             </div>
           </div>
           <div class="side-post my-1">
-            <a href="post.html" class="side-post-thumb highlightable"
+            <a href="#" class="side-post-thumb highlightable"
               ><img src="../../../img/meme.jpg" alt="img"
             /></a>
             <div class="side-post-details">
               <h2>
-                <a href="post.html"
-                  >Mariners of the future continue to take shape</a
-                >
+                <a href="#">Mariners of the future continue to take shape</a>
               </h2>
               <small><i class="far fa-clock"></i> September 19, 2020</small>
             </div>
           </div>
           <div class="side-post my-1">
-            <a href="post.html" class="side-post-thumb highlightable"
+            <a href="#" class="side-post-thumb highlightable"
               ><img src="../../../img/meme.jpg" alt="img"
             /></a>
             <div class="side-post-details">
               <h2>
-                <a href="post.html"
-                  >Mariners of the future continue to take shape</a
-                >
+                <a href="#">Mariners of the future continue to take shape</a>
               </h2>
               <small><i class="far fa-clock"></i> September 19, 2020</small>
             </div>
