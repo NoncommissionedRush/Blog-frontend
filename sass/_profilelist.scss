@@ -1,21 +1,23 @@
 // profiles list
 
-.profile {
+.profiles {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.profile {
+  display: flex;
   align-items: center;
-  justify-items: start;
-  gap: 1rem;
   line-height: 1.5;
-  position: relative;
+  gap: 1rem;
+
+  .small {
+    width: 150px;
+  }
 
   .btn {
     margin-top: 0.5rem;
   }
-}
-
-.img-clublogo {
-  height: 100%;
-  width: 100%;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }

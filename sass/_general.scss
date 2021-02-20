@@ -38,6 +38,10 @@ ul {
   list-style: none;
 }
 
+h1 {
+  line-height: 1.2;
+}
+
 img {
   width: 100%;
 }
@@ -48,10 +52,6 @@ img {
 
 .img-thumb {
   border: 10px solid #fff;
-}
-
-.centered {
-  margin: 1rem auto;
 }
 
 .tiny {
@@ -87,7 +87,7 @@ img {
 .container {
   margin: 0 auto;
   max-width: $max-width;
-  padding: 5rem 0;
+  padding: 5rem 1.5rem;
 }
 
 .container-grid {

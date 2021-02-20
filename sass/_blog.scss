@@ -5,6 +5,10 @@
     color: #333;
     background-color: #333;
   }
+
+  .small {
+    margin: 1rem auto;
+  }
 }
 
 .post {
@@ -15,12 +19,6 @@
   h2 {
     line-height: 1.1;
   }
-
-  // a {
-  //   &:hover {
-  //     color: $secondary_color;
-  //   }
-  // }
 
   &-thumb {
     max-height: 240px;
@@ -51,14 +49,10 @@
 
   h2 a {
     font-size: 1.1rem;
-    // &:hover {
-    //   color: $secondary_color;
-    // }
   }
 
   &-thumb {
     max-height: 120px;
-    // position: relative;
     margin-right: 1rem;
 
     img {

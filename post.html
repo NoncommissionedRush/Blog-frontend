@@ -27,7 +27,7 @@
     </nav>
 
     <div class="container">
-      <h1 class="text-xl text-primary">
+      <h1 class="text-xl text-primary my-1">
         Mariners of the future continue to take shape
       </h1>
       <small
@@ -36,7 +36,7 @@
         <i class="far fa-clock"></i> 2 hours ago</small
       >
 
-      <div class="container-grid my-2">
+      <div class="container-grid">
         <div class="post-body">
           <img
             class="title-img my-1"
@@ -106,34 +106,74 @@
             </button>
           </form>
 
-          <div class="comment">
-            <div class="comment-heading">
-              <div class="comment-voting">
-                <button class="btn-vote">
-                  <span aria-hidden="true">&#9650;</span>
-                  <span class="sr-only">Vote up</span>
-                </button>
-                <button class="btn-vote">
-                  <span aria-hidden="true">&#9660;</span>
-                  <span class="sr-only">Vote down</span>
-                </button>
+          <div class="comment-thread">
+            <div class="comment">
+              <a href="#comment-2" class="comment-border-link">
+                <span class="sr-only">Jump to comment-2</span>
+              </a>
+              <div class="comment-heading">
+                <div class="comment-voting">
+                  <button class="btn-vote">
+                    <span aria-hidden="true">&#9650;</span>
+                    <span class="sr-only">Vote up</span>
+                  </button>
+                  <button class="btn-vote">
+                    <span aria-hidden="true">&#9660;</span>
+                    <span class="sr-only">Vote down</span>
+                  </button>
+                </div>
+                <div class="comment-info">
+                  <a class="comment-author" href="profile.html"
+                    >Viktor Milosavljevic</a
+                  >
+                  <p>3 votes 2 hours ago</p>
+                </div>
               </div>
-              <div class="comment-info">
-                <a class="comment-author" href="profile.html"
-                  >Viktor Milosavljevic</a
-                >
-                <p>3 votes 2 hours ago</p>
+              <div class="comment-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Atque voluptatum illum pariatur aperiam laudantium asperiores
+                  delectus optio molestias. Dolorem et aut maiores nisi tempore
+                  cumque ea praesentium in, architecto laudantium.
+                </p>
+                <div class="my-1">
+                  <button class="btn btn-white">Reply</button>
+                  <button class="btn btn-white">Flag</button>
+                </div>
               </div>
-            </div>
-            <p class="comment-body">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-              voluptatum illum pariatur aperiam laudantium asperiores delectus
-              optio molestias. Dolorem et aut maiores nisi tempore cumque ea
-              praesentium in, architecto laudantium.
-            </p>
-            <div class="my-1">
-              <button class="btn btn-white">Reply</button>
-              <button class="btn btn-white">Flag</button>
+
+              <div class="replies">
+                <div class="comment">
+                  <a href="#comment-2" class="comment-border-link">
+                    <span class="sr-only">Jump to comment-2</span>
+                  </a>
+                  <div class="comment-heading">
+                    <div class="comment-voting">
+                      <button class="btn-vote">
+                        <span aria-hidden="true">&#9650;</span>
+                        <span class="sr-only">Vote up</span>
+                      </button>
+                      <button class="btn-vote">
+                        <span aria-hidden="true">&#9660;</span>
+                        <span class="sr-only">Vote down</span>
+                      </button>
+                    </div>
+                    <div class="comment-info">
+                      <a class="comment-author" href="profile.html"
+                        >Viktor Milosavljevic</a
+                      >
+                      <p>3 votes 2 hours ago</p>
+                    </div>
+                  </div>
+                  <div class="comment-body">
+                    <p>Ty kokot pojebany</p>
+                    <div class="my-1">
+                      <button class="btn btn-white">Reply</button>
+                      <button class="btn btn-white">Flag</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,18 +181,24 @@
         <div class="side-container">
           <h2>About Viktor Milosavljevic</h2>
           <hr />
-          <div class="small centered">
-            <a href="profile.html">
-              <div class="profile-img img-round highlightable">
-                <img src="../../../img/profile-pic.jpg" alt="profilepicture" />
-              </div>
-            </a>
+          <div class="author-info">
+            <div class="small">
+              <a href="profile.html">
+                <div class="profile-img img-round highlightable">
+                  <img
+                    src="../../../img/profile-pic.jpg"
+                    alt="profilepicture"
+                  />
+                </div>
+              </a>
+            </div>
+            <p class="text-bold text-grey my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus architecto error dolor autem, dolores eaque ipsam
+              numquam nulla culpa quidem et asperiores eius deserunt
+              consectetur.
+            </p>
           </div>
-          <p class="text-bold text-grey my-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            architecto error dolor autem, dolores eaque ipsam numquam nulla
-            culpa quidem et asperiores eius deserunt consectetur.
-          </p>
 
           <div class="sticky">
             <h2>Popular Articles</h2>
